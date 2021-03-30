@@ -1,0 +1,199 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding:0;
+}
+.container{
+  width:252px ;
+  margin: 0px auto;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.input-ordered__title{
+  width: 78px;
+  height: 16px;
+  position: relative;
+  font-family:" Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 27px;
+  color: #48494D;
+}
+.input-ordered__title::before{
+  content: '';
+  background: url(./../img/fi-rr-angle-small-up.svg) no-repeat ;
+  background-size: contain;
+  position:absolute;
+  width: 15px;
+  height: 15px;
+  left: -29px;
+  top: 0px;
+  opacity: 0.6;
+}
+.input__search{
+  margin-top: 15px;
+  margin-bottom: 22px;
+  width: 100%;
+  padding: 8px 0px 7px 20px;
+}
+.input-ordered__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.list-input__item{
+  width: 50%;
+  padding-top: 5px;
+
+
+}
+.list-input__label{
+  display: inline-flex;
+  align-items: flex-start;
+  
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+.list-input__label:nth-child(2){
+  margin-right: 40px;
+}
+.list-input__label-size{
+  width: 117px;
+  height: 34px;
+}
+.list-input__checkbox{
+  width: 14px;
+  height: 14px;
+  position: relative;
+  margin-right: 15px;
+  border: 1px solid #cdcdcd;
+}
+.list-input__checkbox::before{
+  content: '';
+  width: 8px;
+  height: 6px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(./../img/Shape.svg) no-repeat center center ;
+  background-size: contain;
+}
+.input-check:checked+ .list-input__checkbox {
+  border-color: transparent;
+  background-color: #ff7931;
+
+}
+.main__link{
+  margin: 18px 0px 0px 0px;
+  padding: 0;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  line-height: 17px;
+  color: #FF7931;
+  width: 92px;
+  height: 16px;
+  border: none;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(255, 121, 49, 0.2);
+}
+.form__technology{
+  margin: 0px auto;
+}
+.form__technology__text{
+  margin-right: 10px;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #48494D;
+  width: 97px;
+  height: 20px;
+  position: relative;
+}
+.form__technology__text::before{
+  content: '';
+  background-size: contain;
+  position:absolute;
+  background: url(./../img/iconka.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  left: 95px;
+}
+.input-ordered__Promotions{
+
+  width: 78px;
+  height: 16px;
+  position: relative;
+  font-family:" Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 27px;
+  color: #48494D;
+}
+.Promotions__list{
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+}
+.Promotions-list__item{
+  width: 63px;
+  height: 25px;
+  background: #F0F0F4;
+
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.Promotions-list__item:active{
+  
+  background: linear-gradient(91.1deg, #9710E9 1.17%, #FD8D43 99.31%);
+}
+.Promotions-list__item:nth-child(4){
+  width: 95px;
+  height: 25px;
+}
+.Promotions-list-item__input{
+  padding: 6px 14px 8px ;
+  font-family: "Proxima Nova";
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  color: #BDBEC2;
+  width: 33px;
+  height: 11px;
+}
+.Promotions-list-item__input:active{
+  color: #ffffff;
+}
